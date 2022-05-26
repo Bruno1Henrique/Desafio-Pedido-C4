@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Faça seu pedido</title>
+</head>
+<body>
+    <h1>Formulário de Dados</h1>
+    <h2>Abaixo informe todos os dados necessários para que o sistema imprima o pedido do cliente</h2>
+        <form method="post" action="orcamento.php">
+
+        <div class="cliente">
+                Nome do cliente: &nbsp <input type="text" name="cliente" class="client">
+        </div>
+        <div class="produto">
+                Produto: &nbsp <input type="text" name="produto" class="product">
+        </div>
+        <div class="pagamento">
+            Valor: &nbsp <input type="number" name="valor">
+            Forma de pagamento:
+            <select name="pagamento" >
+                <option>A vista</option>
+                <option>A prazo 1X</option>
+                <option>A prazo 2X</option>
+                <option>A prazo 3X</option>
+                <option>Cartão</option>
+             </select>
+        </div>
+        <div class="data">
+            Data: &nbsp <input type="date" name="data">
+        </div>
+            <input type="submit" name="enviar" value="Visualizar Pedido" formtarget="__blank" class="acao" >
+            <input type="reset" value="Limpar dados" class="reset">
+        </form>
+</body>
+</html>

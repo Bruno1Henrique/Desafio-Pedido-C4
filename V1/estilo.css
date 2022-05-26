@@ -1,0 +1,96 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align:center;
+}
+
+fieldset{
+    border: transparent;
+    font-family: 'Times New Roman', Times, serif
+}
+
+form{
+    text-align: center;
+}
+
+input, textarea, select{
+    background: #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px transparent;
+}
+
+input:focus, textarea:focus, select:focus{
+    border: 2px solid #000000;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.client{ /*caixa de selecao do cliente*/
+    display: inline-block;
+    width: 50%;
+    
+}
+
+.product{ /*Caixa de selecao do produto*/
+    display: inline-block;
+    width: 45.5%;
+   
+}
+
+.cliente{ /*div do cliente que inclui a caixa de selecao*/
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.produto{ /*div que inclui o produto e o valor*/
+    padding-bottom: 10px;
+}
+
+.pagamento{
+    padding-bottom: 10px;
+}
+
+.data{
+    padding-bottom: 10px;
+}
+
+.acao{ /*bota de visualizar pedido e de mandar imprimir*/
+    background: green;
+    color: white;
+}
+
+.reset{
+    background: red;
+    color: white;
+}
+/*Estilo do orcamento.php*/
+
+body{
+    text-align: center;
+    margin: 0;
+    background: rgb(114, 172, 226)
+}
+
+.client-imp{ 
+    padding-bottom: 10px;
+}
+
+.product-imp{
+    padding-bottom: 10px;
+}
+
+.payment-imp{
+    display: inline-block;
+}
+
+.date-imp{
+    padding-top: 10px;
+}
+
+.imprimir{
+    padding-bottom: 10px;
+}
