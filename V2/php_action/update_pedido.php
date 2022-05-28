@@ -24,7 +24,7 @@ if(isset($_POST['btn-editar'])):
         $numero = clear($_POST['numero']);
 		$observacao = clear($_POST['observacao']);
 		
-		$sql = "UPDATE pedidos SET cliente = '$cliente', data_ped = '$data_ped', produto = '$produto',valor = '$valor', observacao = '$observacao' WHERE numero = '$numero'";
+		$sql = "UPDATE pedidos SET cliente = '$cliente', data_ped = '$data_ped', produto = '$produto',valor = '$valor', observacao = '$dados' WHERE numero = '$numero'";
 
 		if (mysqli_query($connect, $sql)) {
 			$_SESSION['mensagem'] = "Atualizado com sucesso!";

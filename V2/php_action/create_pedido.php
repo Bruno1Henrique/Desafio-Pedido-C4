@@ -8,7 +8,7 @@ require_once 'db_connect.php';
 
 if(isset($_POST['btn-cadastrar'])):
 
-		$options = mysqli_escape_string($connect, $_POST['cliente']);
+		$options = $_POST['cliente'];
 		$data_ped = $_POST['data_ped'];
 		$valor = mysqli_escape_string($connect, $_POST['valor']);
 		$produto = mysqli_escape_string($connect, $_POST['produto']);
@@ -16,13 +16,14 @@ if(isset($_POST['btn-cadastrar'])):
 
 		$sql = "INSERT INTO pedidos (cliente, data_ped, valor, produto, observacao) VALUES ('$options', '$data_ped', '$valor','$produto','$observacao')";
 
-		if (mysqli_query($connect, $sql)) {
+		var_dump($sql);
+		/*if (mysqli_query($connect, $sql)) {
 			$_SESSION['mensagem'] = "Cadastrado com sucesso!";
 			header('Location: ../index.php');
 		} else {
 			$_SESSION['mensagem'] = "Erro ao cadastrar";
 			header('Location: ../index.php');
-		}
+		}*/
 
 
 

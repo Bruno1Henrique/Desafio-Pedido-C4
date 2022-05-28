@@ -32,23 +32,23 @@ include_once 'includes/message.php';
                 ?>
 
                 <tr>
-                    <td><?php echo $dados ['id'];?></td>
+                    <td><?php echo $dados ['numero'];?></td>
                     <td><?php echo $dados ['cliente'];?></td>
                     <td><?php echo $dados ['data_ped'];?></td>
                     <td><?php echo $dados ['valor'];?></td>
-                    <td><a href="editar_pedido.php?numero=<?php echo $dados ['id']; ?>" class="btn-floating orange"><i class="material-icons">edit</i></a></td>
+                    <td><a href="editar_pedido.php?numero=<?php echo $dados ['numero']; ?>" class="btn-floating orange"><i class="material-icons">edit</i></a></td>
 
-                    <td><a href="#modal<?php echo $dados ['id'];?>" class="btn-floating red modal-trigger"><i class="material-icons">delete</id></a></td>
+                    <td><a href="#modal<?php echo $dados ['numero'];?>" class="btn-floating red modal-trigger"><i class="material-icons">delete</id></a></td>
 
 
-                    <div id="modal<?php echo $dados ['id'];?>" class="modal">
+                    <div id="modal<?php echo $dados ['numero'];?>" class="modal">
                         <div class="modal-content">
                         <h4>Quer realmente deletar esse pedido?</h4>    
                         </div>
                         <div class="modal-footer">
 
                         <form action="php_action/delete_pedido.php" method="POST">
-                            <input type="hidden" name="numero" value="<?php echo $dados ['id'];?>">
+                            <input type="hidden" name="numero" value="<?php echo $dados ['numero'];?>">
                             <button type="submit" name="btn-deletar" class="btn red">Sim, quero deletar</button>
                             <a href="#!" class="modal-close waves-effect btn-flat">Cancelar</a>
                         </form>
